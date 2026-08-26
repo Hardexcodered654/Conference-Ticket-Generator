@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="conf.css">
+  <title>Frontend Mentor | Conference ticket generator</title>
+</head>
+<body> 
+  <img src="img/pattern-squiggly-line-bottom-desktop.svg" alt="show" class="linebottom">
+  <img src="img/pattern-squiggly-line-top.svg" class="linetop">
+  <img src="img/pattern-lines.svg" alt="" class="linepattern">
+  <img src="img/pattern-circle.svg" alt="" class="circlepattern">
+<main class="form-ticket-page"
+<div class="logo">
+	<img src="img/logo-full.svg" alt="Coding Conf Logo">
+</div>
+
+<!-- Title Section -->
+<h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+  <p class="subtitle">Secure your spot at next year's biggest coding conference.</p>
+<!--Form Starts Here-->
+  <form id="ticket-form" class="ticket-form">
+    <!--Upload Avatar-->
+    <div class="form-group upload-group">
+    <label>Upload Avatar</label>
+
+  <div class="drop-zone" id="drop-zone">
+    <img src="img/icon-upload.svg" class="upload-icon">
+     <p>Drag and drop or click to upload</p>
+     <input type="file" id="avatar" accept="image/png, image/jpeg" hidden>
+  </div>
+
+  <p class="hint">
+    <img src="img/icon-info.svg" alt="">
+    Upload your photo (JPG or PNG, max size: 500KB).
+  </p>
+  </div>
+
+  <!--Full Name-->
+  <div class="form-group">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" required>
+  </div>
+
+  <!--Email-->
+  <div class="form-group"> 
+  <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+  </div>
+
+  <!--GitHub Username-->
+  <div class="form-group">
+    <label for="github">GitHub Username</label>
+      <input type="text" id="github" name="github" placeholder="@yourusername" required>
+    </div>
+
+  <button type="submit" class="btn-generate">Generate My Ticket</button>
+  </form>
+  <div id="ticket-result" class="ticket-result hidden"></div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.<br>
+    </div>
+    Coded by <a href="#">Hardex</a>.
+  </footer>
+</body>
+</html>

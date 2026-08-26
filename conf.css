@@ -1,0 +1,135 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Courier New', Courier, monospace;
+  background-image: url(img/background-tablet.png); 
+  background-size: 100%;
+  background-attachment: fixed;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.linebottom{
+  position: absolute;
+  top: 550px;
+  left: 0;
+  width: 500px;
+  z-index: -1;
+}
+.linetop{
+  position: absolute;
+  top: 0;
+  left: 750px;
+  width: 500px;
+  z-index: -1;
+}
+.linepattern{
+  position: fixed;
+  z-index: -1;
+  bottom: 4px;
+}
+.circlepattern{
+  position: fixed;
+  bottom: 200px;
+  right: 150px;
+  z-index: -1;
+
+}
+.form-ticket-page{
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  margin: 0;
+}
+.imageavatar{
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+  
+}
+.logo{
+  margin-bottom: 40px;
+}
+.logo img{
+  height: 30px;
+}
+h1{
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.subtitle{
+  color: #a1a1b5;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+}
+.form-group label{
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #d1d1e0;
+  text-align: justify;
+}
+input[type="text"],
+input[type="email"]{
+  width: 100%;
+  padding: 14px 16px;
+  background-color: #1a1a2e;
+  border: 1px solid #3a3a5c;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+input:focus {
+  border-color: #f57463;
+}
+.drop-zone{
+background-color: #1a1a2e;
+border: 2px dashed white;
+border-radius: 12px;
+padding: 30px 20px;
+cursor: pointer;
+transition: border-color 0.2s;
+margin-bottom: 10px;
+}
+.drop-zone p{
+  margin-top: 10px;
+  color: #a1a1b5;
+  font-size: 0.95rem;
+}
+.hint{
+  font-size: 0.8rem;
+  color: #8787a3;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.btn-generate{
+  width: 100%;
+  padding: 16px;
+  background-color: #f57463;
+  color: #0c0c1d;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+.btn-generate{
+  background-color: #ff8a78;
+}
+.hidden{
+  display: none;
+}
